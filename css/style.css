@@ -1,0 +1,109 @@
+/* Variables */
+:root {
+    /* Tipografías */
+    --fuenteHeadings: 'Open Sans', sans-serif;
+    --fuenteParrafos: 'PT Sans', sans-serif;
+    /* Colores */
+    --color1: #ffffff90;
+    --blanco: #fff;
+    --negro: #000;
+    --verde: #087d0c;
+    --rojo: #bd1010;
+    --azul: #1025bd;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    background-image: url(../img/Criptografia.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 7rem;
+    color: var(--negro);
+    font-weight: 700;
+}
+
+.caja_texto {
+    gap: 7rem;
+    background: rgb(32, 53, 119);
+    background: linear-gradient(
+        285deg,
+        rgba(32, 53, 119, 0.3981792546120011) 50%,
+        rgba(0, 255, 51, 0.3813725319229254) 50%
+    );
+    border-radius: 2rem;
+}
+
+.texto_1,
+.texto_2 {
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.textarea {
+    height: 15rem;
+    width: 42rem;
+    border: none;
+    background-color: var(--color1);
+    font-weight: 400;
+    font-size: 2rem !important;
+    text-align: justify;
+    font-family: var(--fuenteParrafos);
+}
+
+.boton {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_1,
+.btn_2,
+.btn_3 {
+    text-transform: uppercase;
+    font-size: 2rem !important;
+    background-color: var(--negro) !important;
+    border: none;
+    border-style: none;
+}
+
+.btn_1:hover {
+    color: var(--verde);
+}
+
+.btn_2:hover {
+    color: var(--rojo);
+}
+
+.btn_3:hover {
+    color: var(--azul);
+}
