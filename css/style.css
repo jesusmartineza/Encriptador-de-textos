@@ -26,13 +26,15 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
-    background-image: url(../img/Criptografia.webp);
+    background-image: url(../img/cifrado1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 img {
     max-width: 100%;
+    height: 100vh;
 }
 
 h2 {
@@ -49,12 +51,14 @@ h2 {
 
 .titulo {
     font-size: 7rem;
-    color: var(--negro);
+    color: var(--verde);
     font-weight: 700;
 }
 
 .caja_texto {
-    gap: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
     background: rgb(32, 53, 119);
     background: linear-gradient(
         285deg,
@@ -66,7 +70,6 @@ h2 {
 
 .texto_1,
 .texto_2 {
-    border-radius: 2rem;
     padding: 2rem;
 }
 
@@ -74,10 +77,11 @@ h2 {
     height: 15rem;
     width: 42rem;
     border: none;
+    border-radius: 1rem;
+    outline: none;
     background-color: var(--color1);
     font-weight: 400;
-    font-size: 2rem !important;
-    text-align: justify;
+    font-size: 2rem;
     font-family: var(--fuenteParrafos);
 }
 
@@ -90,20 +94,34 @@ h2 {
 .btn_2,
 .btn_3 {
     text-transform: uppercase;
-    font-size: 2rem !important;
-    background-color: var(--negro) !important;
+    font-size: 2rem;
+    background-color: var(--negro);
     border: none;
     border-style: none;
 }
 
 .btn_1:hover {
+    background-color: var(--blanco);
+    transition: all ease 0.3s;
     color: var(--verde);
 }
 
 .btn_2:hover {
+    background-color: var(--blanco);
+    transition: all ease 0.3s;
     color: var(--rojo);
 }
 
 .btn_3:hover {
+    background-color: var(--blanco);
+    transition: all ease 0.3s;
     color: var(--azul);
+}
+
+.footer {
+    color: var(--verde);
+    font-family: var(--fuenteHeadings);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 5rem;
 }
